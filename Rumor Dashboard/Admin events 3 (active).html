@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/jquery-nice-select-1.1.0/css/nice-select.css"
+    />
+    <link rel="stylesheet" href="assets/css/default-css.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/style-z.css" />
+    <link rel="stylesheet" href="assets/css/styleu.css" />
+  </head>
+
+  <body>
+    <!-- preloader area start -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+      <!-- sidebar menu area start -->
+      <div class="sidebar-menu">
+        <div class="sidebar-header">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/images/icon/sidebar-logo.svg" alt="logo"
+            /></a>
+          </div>
+          <p class="project-role">Admin</p>
+        </div>
+
+        <div class="main-menu">
+          <div class="menu-inner1">
+            <nav>
+              <ul class="metismenu" id="">
+                <li>
+                  <a href="#">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/dashboard.svg"
+                    />
+
+                    <span>dashboard</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="#">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/events.svg"
+                    />
+
+                    <span>Events</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/host-icon.svg"
+                    />
+
+                    <span>Hosts</span>
+                  </a>
+                </li>
+                <li class="accordion user-tab-accordion">
+                  <a
+                    href="#user-dropdown"
+                    data-bs-toggle="collapse"
+                    class="accordion-button collapsed"
+                  >
+                    <img src="assets/images/icon/user.svg" alt="User Icon" />
+                    <span>User</span>
+                  </a>
+                  <ul class="accordion-collapse collapse" id="user-dropdown">
+                    <li>
+                      <a href="#">
+                        <span>Members</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>Non-members</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="whiteIcon" src="assets/images/icon/chat.svg" />
+                    <span>Chat</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="assets/images/icon/report-icon.svg" />
+                    <span>Reports</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/icon/Settings.svg" />
+                    <span>Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar menu area end -->
+      <!-- main content area start -->
+      <div class="main-content">
+        <div class="main-content-inner">
+          <!-- Main inner content -->
+          <div>
+            <div class="nav-btn pull-left">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- --------------------------Start Coding from here------------------------------------ -->
+          <div class="go-back-container">
+            <img src="assets/images/icon/arrow-chevron-left.svg" />
+            <a href="web-host-events.html">Go back</a>
+          </div>
+          <div class="dashboard-main-headings">
+            <h1 class="main-heading">Events</h1>
+          </div>
+          <div class="events-profile-container">
+            <div class="row g-3">
+              <div class="col-lg-7">
+                <div class="events-profile-left-container">
+                  <div class="flex-item1">
+                    <div
+                      class="events-profile-img-container events-profile-image"
+                    >
+                      <img
+                        class="events-profile-image"
+                        src="assets/images/icon/event-profile-img.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex-item2">
+                    <div class="event-profile-img-cotent">
+                      <div class="d-flex justify-content-end">
+                        <div class="dropdown">
+                          <a
+                            class="sdropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <img src="assets/images/icon/more-horizontal.svg" />
+                          </a>
+
+                          <ul
+                            class="dropdown-menu dropdown-menu-end dropdown-menu-start"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li>
+                              <a class="dropdown-item mb-0" href="#"
+                                >Edit Event</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                data-bs-toggle="modal"
+                                data-bs-target="#message-guest-modal"
+                                class="dropdown-item mb-0"
+                                >Message Guests</a
+                              >
+                            </li>
+
+                            <li>
+                              <a
+                                style="color: #fa7777"
+                                class="dropdown-item mb-0"
+                                href="#"
+                                data-bs-toggle="modal"
+                                data-bs-target="#delete-event-modal"
+                                >Delete Events</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- <img src="assets/images/more-horizontal.svg"> -->
+                      </div>
+                      <h2 style="font-size: 24px" class="main-heading">
+                        H.Wood Homecoming
+                      </h2>
+                      <div class="img-content-details">
+                        <div
+                          class="d-flex justify-content-between align-items-center mb-1"
+                        >
+                          <span class="d-flex align-items-center">
+                            <img src="assets/images/icon/calendar-icon.svg" />
+                            <p class="date-text">Date:</p>
+                          </span>
+                        </div>
+                        <div
+                          class="d-flex justify-content-between align-items-center date-bottom-margin"
+                        >
+                          <h5
+                            style="font-size: 16px; font-weight: 400"
+                            class="main-heading romie-med"
+                          >
+                            February 9, 2024
+                          </h5>
+                        </div>
+                        <span class="d-flex align-items-center mb-1">
+                          <img src="assets/images/icon/calendar-icon.svg" />
+                          <p class="date-text">Location:</p>
+                        </span>
+                        <h5
+                          style="font-size: 16px; font-weight: 400"
+                          class="main-heading date-bottom-margin romie-med"
+                        >
+                          Wynn Resorts Las Vegas, NV 89109
+                        </h5>
+                        <span
+                          class="d-flex align-items-center date-bottom-margin"
+                        >
+                          <span class="date-text">Max Capacity:</span>
+                          <span
+                            style="font-size: 16px; font-weight: 400"
+                            class="main-heading romie-med"
+                          >
+                            4,000
+                          </span>
+                        </span>
+
+                        <span class="date-bottom-margin">
+                          <span class="date-text">Host:</span>
+                          <span
+                            style="font-size: 16px; font-weight: 400"
+                            class="main-heading romie-med"
+                          >
+                            Uncommon Entertainment & H Wood Group
+                          </span>
+                        </span>
+                        <span
+                          class="d-flex align-items-center date-bottom-margin"
+                          style="padding-top: 20px"
+                        >
+                          <p class="date-text">Attandees:</p>
+                          <h5
+                            style="font-size: 16px; font-weight: 400"
+                            class="main-heading romie-med"
+                          >
+                            275/4000
+                          </h5>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="events-profile-right-container">
+                  <div class="row g-3">
+                    <div class="col-lg-6">
+                      <div
+                        class="event-profile-box event-profile-box-margin only-for-top"
+                      >
+                        <div
+                          class="d-flex justify-content-between align-items-center event-profile-box-padding"
+                        >
+                          <span
+                            style="color: #1e1e1e"
+                            class="issue-tickets-text"
+                            >Attendees</span
+                          >
+                          <img src="assets/images/event_icon_1.svg" />
+                        </div>
+                        <h2
+                          style="font-size: 48px; font-weight: 500"
+                          class="main-heading"
+                        >
+                          ---
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="event-profile-box event-profile-box-margin">
+                        <div
+                          class="d-flex justify-content-between align-items-center event-profile-box-padding"
+                        >
+                          <span
+                            style="color: #1e1e1e"
+                            class="issue-tickets-text"
+                            >Total Influencer Spend</span
+                          >
+                          <img src="assets/images/event_icon_2.svg" />
+                        </div>
+                        <h2
+                          style="font-size: 48px; font-weight: 500"
+                          class="main-heading"
+                        >
+                          ---
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="event-profile-box event-profile-box-margin">
+                        <div
+                          class="d-flex justify-content-between align-items-center event-profile-box-padding"
+                        >
+                          <span
+                            style="color: #1e1e1e"
+                            class="issue-tickets-text"
+                            >Members</span
+                          >
+                          <img src="assets/images/event_icon_3.svg" />
+                        </div>
+                        <h2
+                          style="font-size: 48px; font-weight: 500"
+                          class="main-heading"
+                        >
+                          ---
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="event-profile-box event-profile-box-margin">
+                        <div
+                          class="d-flex justify-content-between align-items-center event-profile-box-padding"
+                        >
+                          <span
+                            style="color: #1e1e1e"
+                            class="issue-tickets-text"
+                            >Estimated Media Value</span
+                          >
+                          <img src="assets/images/event_icon_4.svg" />
+                        </div>
+                        <h2
+                          style="font-size: 48px; font-weight: 500"
+                          class="main-heading"
+                        >
+                          ---
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="event-profile-box">
+                        <div
+                          class="d-flex justify-content-between align-items-center event-profile-box-padding"
+                        >
+                          <span
+                            style="color: #1e1e1e"
+                            class="issue-tickets-text"
+                            ># of Posts</span
+                          >
+                          <img src="assets/images/event_icon_5.svg" />
+                        </div>
+                        <h2
+                          style="font-size: 48px; font-weight: 500"
+                          class="main-heading"
+                        >
+                          ---
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="event-profile-box only-for-top">
+                        <div
+                          class="d-flex justify-content-between align-items-center event-profile-box-padding"
+                        >
+                          <span
+                            style="color: #1e1e1e"
+                            class="issue-tickets-text"
+                            >Total Reach</span
+                          >
+                          <img src="assets/images/event_icon_6.svg" />
+                        </div>
+                        <h2
+                          style="font-size: 48px; font-weight: 500"
+                          class="main-heading"
+                        >
+                          ---
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="event-profile-buttons-container d-flex justify-content-end align-items-center mb-4"
+          >
+            <div style="max-width: 314px; width: 100%">
+              <input
+                style="background-image: url('assets/images/search-normal.svg')"
+                class="event-profile-search-bar"
+                type="text"
+                placeholder="Search by name"
+              />
+            </div>
+          </div>
+          <div class="event-profile-table-container">
+            <ul
+              style="border-bottom: 1.6px solid #e9e9e9"
+              class="nav nav-pills mb-3 d-flex align-items-center"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li
+                class="nav-item d-flex align-items-center"
+                role="presentation"
+              >
+                <button
+                  class="invited-tab active"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  Invited
+                </button>
+                <span
+                  style="
+                    height: 17px;
+                    width: 17px;
+                    background: #d5dade;
+                    margin-right: 25px;
+                  "
+                  class="calender-container"
+                >
+                  <span style="font-size: 6.6px">33</span>
+                </span>
+              </li>
+              <li
+                class="nav-item d-flex align-items-center"
+                role="presentation"
+              >
+                <button
+                  class="invited-tab"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Requests
+                </button>
+                <span
+                  style="
+                    height: 17px;
+                    width: 17px;
+                    background: #fae0e0;
+                    margin-right: 25px;
+                  "
+                  class="calender-container"
+                >
+                  <span style="font-size: 6.6px">0</span>
+                </span>
+              </li>
+              <li
+                class="nav-item d-flex align-items-center"
+                role="presentation"
+              >
+                <button
+                  class="invited-tab"
+                  id="pills-contact-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-contact"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Negotiating
+                </button>
+                <span
+                  style="
+                    height: 17px;
+                    width: 17px;
+                    background: #fae0e0;
+                    margin-right: 25px;
+                  "
+                  class="calender-container"
+                >
+                  <span style="font-size: 6.6px">0</span>
+                </span>
+              </li>
+              <li
+                class="nav-item d-flex align-items-center"
+                role="presentation"
+              >
+                <button
+                  class="invited-tab"
+                  id="Confirmed"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-Confirmed"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-Confirmed"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Confirmed
+                </button>
+                <span
+                  style="
+                    height: 17px;
+                    width: 17px;
+                    background: #d5dade;
+                    margin-right: 25px;
+                  "
+                  class="calender-container"
+                >
+                  <span style="font-size: 6.6px">200</span>
+                </span>
+              </li>
+              <li
+                class="nav-item d-flex align-items-center"
+                role="presentation"
+              >
+                <button
+                  class="invited-tab"
+                  id="Declined"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-Declined"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-Declined"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Declined
+                </button>
+                <span
+                  style="
+                    height: 17px;
+                    width: 17px;
+                    background: #fae0e0;
+                    margin-right: 25px;
+                  "
+                  class="calender-container"
+                >
+                  <span style="font-size: 6.6px">0</span>
+                </span>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade active show"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+              >
+                <div class="dashboard-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <!-- <th></th> -->
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>
+                          <div class="d-flex align-items-center">
+                            <span>Guests</span>
+                            <img
+                              class="ms-1"
+                              src="assets/images/icon/info-icon.svg"
+                              alt=""
+                            />
+                          </div>
+                        </th>
+                        <th>Category</th>
+                        <th>List</th>
+                        <th>User Type</th>
+                        <th>VIA</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="border: none">
+                        <td colspan="9">
+                          <div class="no-attendees">
+                            <p>
+                              There are currently no attendees for this event
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+              >
+                <div class="dashboard-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <!-- <th></th> -->
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>
+                          <div class="d-flex align-items-center">
+                            <span>Guests</span>
+                            <img
+                              class="ms-1"
+                              src="assets/images/icon/info-icon.svg"
+                              alt=""
+                            />
+                          </div>
+                        </th>
+                        <th>Category</th>
+                        <th>List</th>
+                        <th>User Type</th>
+                        <th>VIA</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="border: none">
+                        <td colspan="9">
+                          <div class="no-attendees">
+                            <p>
+                              There are currently no attendees for this event
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-contact"
+                role="tabpanel"
+                aria-labelledby="pills-contact-tab"
+              >
+                <div class="dashboard-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <!-- <th></th> -->
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>
+                          <div class="d-flex align-items-center">
+                            <span>Guests</span>
+                            <img
+                              class="ms-1"
+                              src="assets/images/icon/info-icon.svg"
+                              alt=""
+                            />
+                          </div>
+                        </th>
+                        <th>Category</th>
+                        <th>List</th>
+                        <th>User Type</th>
+                        <th>VIA</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="border: none">
+                        <td colspan="9">
+                          <div class="no-attendees">
+                            <p>
+                              There are currently no attendees for this event
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-Confirmed"
+                role="tabpanel"
+                aria-labelledby="Confirmed"
+              >
+                <div class="dashboard-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <!-- <th></th> -->
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>
+                          <div class="d-flex align-items-center">
+                            <span>Guests</span>
+                            <img
+                              class="ms-1"
+                              src="assets/images/icon/info-icon.svg"
+                              alt=""
+                            />
+                          </div>
+                        </th>
+                        <th>Category</th>
+                        <th>List</th>
+                        <th>User Type</th>
+                        <th>VIA</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="border: none">
+                        <td colspan="9">
+                          <div class="no-attendees">
+                            <p>
+                              There are currently no attendees for this event
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-Declined"
+                role="tabpanel"
+                aria-labelledby="Declined"
+              >
+                <div class="dashboard-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <!-- <th></th> -->
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>
+                          <div class="d-flex align-items-center">
+                            <span>Guests</span>
+                            <img
+                              class="ms-1"
+                              src="assets/images/icon/info-icon.svg"
+                              alt=""
+                            />
+                          </div>
+                        </th>
+                        <th>Category</th>
+                        <th>List</th>
+                        <th>User Type</th>
+                        <th>VIA</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="border: none">
+                        <td colspan="9">
+                          <div class="no-attendees">
+                            <p>
+                              There are currently no attendees for this event
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- main content area end -->
+
+          <!-- message guest modal -->
+          <div
+            class="modal fade add-attandee-modal message-guest-modal"
+            id="message-guest-modal"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div>
+                    <h1 class="modal-title">Message Guests</h1>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="rumor-user-types">
+                    <p class="abc-diatype-med mb-3">User Type</p>
+                    <div class="">
+                      <div class="form-check-inline">
+                        <label class="abc-diatype-med radio-container"
+                          >All
+                          <input type="radio" name="radio" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="abc-diatype-med radio-container"
+                          >Invited members
+                          <input type="radio" name="radio" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="abc-diatype-med radio-container"
+                          >Only confirmed
+                          <input type="radio" name="radio" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="abc-diatype-med radio-container"
+                          >Select List
+                          <input type="radio" name="radio" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rumor-user-types">
+                    <p class="abc-diatype-med mb-3">Message Type</p>
+                    <div class="">
+                      <div class="form-check-inline">
+                        <label class="abc-diatype-med radio-container"
+                          >All
+                          <input type="radio" name="message-type" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="abc-diatype-med radio-container"
+                          >In App Message
+                          <input type="radio" name="message-type" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="abc-diatype-med radio-container"
+                          >Push notification
+                          <input type="radio" name="message-type" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="abc-diatype-med radio-container"
+                          >Text
+                          <input type="radio" name="message-type" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-4">
+                    <div class="col-md-12">
+                      <label class="mb-2 abc-diatype-med">Message</label>
+                      <textarea
+                        class="modal-textarea"
+                        placeholder="Type messsage"
+                        id=""
+                        cols="30"
+                        rows="7"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <p class="mt-3">
+                    You are sending a message to all the attendees invited to
+                    this event.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="footer-btn"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                  <button type="button" class="footer-btn send-btn">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- delete event modal -->
+
+          <div
+            class="modal fade secondary-modal"
+            id="delete-event-modal"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <h1 class="modal-heading pb-3 mb-30">Delete Event</h1>
+                <p class="mb-4">Are you sure you want to delete this event?</p>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="footer-btn"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                  <button type="button" class="footer-btn del-btn">
+                    Delete Event
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- page container area end -->
+
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      const allTime = document.getElementById("allTime");
+      const thisMonth = document.getElementById("thisMonth");
+      const thisQuarter = document.getElementById("thisQuarter");
+      const thisYear = document.getElementById("thisYear");
+      const custom = document.getElementById("custom");
+      allTime.style.background = "#000";
+      allTime.style.color = "#FFF";
+      allTime.addEventListener("click", function () {
+        allTime.style.background = "#000";
+        allTime.style.color = "#FFF";
+        thisMonth.style.background = "#FFF";
+        thisMonth.style.color = "#000";
+        thisQuarter.style.background = "#FFF";
+        thisQuarter.style.color = "#000";
+        thisYear.style.background = "#FFF";
+        thisYear.style.color = "#000";
+        custom.style.background = "#FFF";
+        custom.style.color = "#000";
+      });
+      thisMonth.addEventListener("click", function () {
+        thisMonth.style.background = "#000";
+        thisMonth.style.color = "#FFF";
+        allTime.style.background = "#FFF";
+        allTime.style.color = "#000";
+        thisQuarter.style.background = "#FFF";
+        thisQuarter.style.color = "#000";
+        thisYear.style.background = "#FFF";
+        thisYear.style.color = "#000";
+        custom.style.background = "#FFF";
+        custom.style.color = "#000";
+      });
+      thisQuarter.addEventListener("click", function () {
+        thisQuarter.style.background = "#000";
+        thisQuarter.style.color = "#FFF";
+        allTime.style.background = "#FFF";
+        allTime.style.color = "#000";
+        thisMonth.style.background = "#FFF";
+        thisMonth.style.color = "#000";
+        thisYear.style.background = "#FFF";
+        thisYear.style.color = "#000";
+        custom.style.background = "#FFF";
+        custom.style.color = "#000";
+      });
+      thisYear.addEventListener("click", function () {
+        thisYear.style.background = "#000";
+        thisYear.style.color = "#FFF";
+        allTime.style.background = "#FFF";
+        allTime.style.color = "#000";
+        thisMonth.style.background = "#FFF";
+        thisMonth.style.color = "#000";
+        thisQuarter.style.background = "#FFF";
+        thisQuarter.style.color = "#000";
+        custom.style.background = "#FFF";
+        custom.style.color = "#000";
+      });
+      custom.addEventListener("click", function () {
+        custom.style.background = "#000";
+        custom.style.color = "#FFF";
+        allTime.style.background = "#FFF";
+        allTime.style.color = "#000";
+        thisMonth.style.background = "#FFF";
+        thisMonth.style.color = "#000";
+        thisQuarter.style.background = "#FFF";
+        thisQuarter.style.color = "#000";
+        thisYear.style.background = "#FFF";
+        thisYear.style.color = "#000";
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("select").niceSelect();
+      });
+    </script>
+  </body>
+</html>

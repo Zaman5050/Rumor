@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Users View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/icon/rumor-logo.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/default-css.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styleu.css" />
+  </head>
+
+  <body>
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+      <!-- sidebar menu area start -->
+      <div class="sidebar-menu">
+        <div class="sidebar-header">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/images/icon/sidebar-logo.svg" alt="logo"
+            /></a>
+          </div>
+        </div>
+
+        <div class="main-menu">
+          <div class="menu-inner1">
+            <nav>
+              <ul class="metismenu" id="">
+                <li>
+                  <a href="host-web-dashboard.html">
+                    <img src="assets/images/icon/dashboard.svg" />
+                    <span>dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="web-host-events.html">
+                    <img src="assets/images/icon/events.svg" />
+                    <span>Events</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chat.html">
+                    <img class="whiteIcon" src="assets/images/icon/chat.svg" />
+                    <span>Chat</span>
+                  </a>
+                </li>
+                <li class="accordion user-tab-accordion">
+                  <a
+                    href="#user-dropdown"
+                    data-bs-toggle="collapse"
+                    class="accordion-button collapsed"
+                  >
+                    <img src="assets/images/icon/user.svg" alt="User Icon" />
+                    <span>User</span>
+                  </a>
+                  <ul class="accordion-collapse collapse" id="user-dropdown">
+                    <li class="active">
+                      <a href="Users-members.html">
+                        <span>Members</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="Users non-members.html">
+                        <span>Non-members</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="Team.html">
+                    <img src="assets/images/icon/team.svg" />
+                    <span>Team</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Settings.html">
+                    <img src="assets/images/icon/Settings.svg" />
+                    <span>Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar menu area end -->
+      <!-- main content area start -->
+      <div class="main-content">
+        <div class="main-content-inner">
+          <!-- Main inner content -->
+          <div>
+            <div class="nav-btn pull-left">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="dashboard-header mb-20">
+            <div>
+              <a href="Users-members.html" class="back-arrow-btn">
+                <img src="assets/images/icon/back-arrow-button.svg" alt="" />
+                <span>Go back</span>
+              </a>
+              <h1>Hosts</h1>
+            </div>
+            <div class="dropdown">
+              <button
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class="user-img"
+                  src="assets/images/icon/user-img.png"
+                  alt=""
+                />
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="user-detail mb-5">
+            <div class="user-profile">
+              <div class="user-profile-img">
+                <img src="assets/images/icon/user-event-img.png" alt="" />
+              </div>
+              <div class="user-bio">
+                <div class="user-fav">
+                  <h1>Nylon</h1>
+                </div>
+                <div class="user-bio-detail">
+                  <p>
+                    <span class="text-grey">Contact:</span>
+                    <span class="romie-med">Michael Gates</span>
+                  </p>
+                  <p>
+                    <span class="text-grey">Email:</span>
+                    <span class="romie-med">michael.gates@nylon.com</span>
+                  </p>
+                  <p>
+                    <span class="text-grey">Website:</span>
+                    <span class="romie-med">nylon.com</span>
+                  </p>
+                  <p>
+                    <span class="text-grey">Events per year:</span>
+                    <span class="romie-med">14</span>
+                  </p>
+                  <p>
+                    <span class="text-grey">Status:</span>
+                    <span class="romie-med">Pending</span>
+                  </p>
+                  <p>
+                    <span class="text-grey">Invited by:</span>
+                    <span class="romie-med">Host Name</span>
+                  </p>
+                </div>
+                <div class="d-flex gap-2">
+                  <a class="status-btn bg-active">Approve</a>
+                  <a class="status-btn bg-invited">Reject</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- page container area end -->
+
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+
+    <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/scripts.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Prevent dropdown from closing on click inside the menu
+        $(".dropdown-menu").on("click", function (e) {
+          e.stopPropagation();
+        });
+      });
+    </script>
+  </body>
+</html>

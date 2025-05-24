@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Romie Trial";
+  src: url(../fonts/Romie-Regular/Romie-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Romie Trial";
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.rumor-img {
+  object-fit: none;
+  width: 100%;
+}

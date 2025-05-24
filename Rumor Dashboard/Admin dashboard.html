@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/default-css.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/style-z.css" />
+  </head>
+
+  <body>
+    <!-- preloader area start -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+      <!-- sidebar menu area start -->
+      <div class="sidebar-menu">
+        <div class="sidebar-header">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/images/icon/sidebar-logo.svg" alt="logo"
+            /></a>
+          </div>
+          <p class="project-role">Admin</p>
+        </div>
+
+        <div class="main-menu">
+          <div class="menu-inner1">
+            <nav>
+              <ul class="metismenu" id="">
+                <li class="active">
+                  <a href="#">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/dashboard.svg"
+                    />
+
+                    <span>dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/events.svg"
+                    />
+
+                    <span>Events</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/host-icon.svg"
+                    />
+
+                    <span>Hosts</span>
+                  </a>
+                </li>
+                <li class="accordion user-tab-accordion">
+                  <a
+                    href="#user-dropdown"
+                    data-bs-toggle="collapse"
+                    class="accordion-button collapsed"
+                  >
+                    <img src="assets/images/icon/user.svg" alt="User Icon" />
+                    <span>User</span>
+                  </a>
+                  <ul class="accordion-collapse collapse" id="user-dropdown">
+                    <li>
+                      <a href="#">
+                        <span>Members</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>Non-members</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="whiteIcon" src="assets/images/icon/chat.svg" />
+                    <span>Chat</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="assets/images/icon/report-icon.svg" />
+                    <span>Reports</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/icon/Settings.svg" />
+                    <span>Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar menu area end -->
+      <!-- main content area start -->
+      <div class="main-content">
+        <div class="main-content-inner">
+          <!-- Main inner content -->
+          <div>
+            <div class="nav-btn pull-left">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- --------------------------Start Coding from here------------------------------------ -->
+          <div class="dashboard-main-headings">
+            <p class="welcome-back">Welcome back</p>
+            <h1 class="main-heading">Sarah Martins</h1>
+            <h5 class="events-heading">Events</h5>
+          </div>
+          <div class="dashboard-button-container">
+            <a href="#" id="allTime" class="dashboard-anchors">All Times</a>
+            <a id="thisMonth" class="dashboard-anchors">This Month</a>
+            <a id="thisQuarter" class="dashboard-anchors">This Year</a>
+            <a id="thisYear" class="dashboard-anchors">Last Month</a>
+            <!-- <a id="custom" class="dashboard-anchors selector">Custom</a> -->
+            <span id="" class="calender-container selector">
+              <img src="assets/images/calendar-icon.svg" />
+            </span>
+            <input
+              type="hidden"
+              name="custom_date_range"
+              placeholder="Custom"
+              class="dashboard_button range-picker"
+              id="custom"
+            />
+          </div>
+          <div class="dashboard-boxes-container">
+            <div class="dashboard-flex">
+              <div class="flex-items">
+                <div class="dashboard-box">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <p class="box-text"># of rumor events</p>
+                    <span
+                      style="height: 39px; width: 39px; background: #555555"
+                      class="calender-container"
+                    >
+                      <img src="assets/images/Star.svg" />
+                    </span>
+                  </div>
+                  <div class="d-flex">
+                    <h1 class="box-number">15</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-items">
+                <div style="background: #b7a29a" class="dashboard-box">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <p style="color: #000" class="box-text">attendees</p>
+                    <span
+                      style="height: 39px; width: 39px; background: #c1afa8"
+                      class="calender-container"
+                    >
+                      <img src="assets/images/dashboard-box-icon.svg" />
+                    </span>
+                  </div>
+                  <div class="d-flex">
+                    <h1 style="color: #000" class="box-number">28,650</h1>
+                    <!-- <span class="box-event">events</span> -->
+                  </div>
+                </div>
+              </div>
+              <div class="flex-items">
+                <div class="dashboard-box">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <p class="box-text">combined attending social media</p>
+                    <span
+                      style="height: 39px; width: 39px; background: #555555"
+                      class="calender-container"
+                    >
+                      <img src="assets/images/dashboard-box-icon1.svg" />
+                    </span>
+                  </div>
+                  <div class="d-flex">
+                    <h1 class="box-number">
+                      6.2 <span class="box-unit"> b</span>
+                    </h1>
+                    <!-- <span class="box-event">events</span> -->
+                  </div>
+                  <div class="dropdown dashboard-filter-menu">
+                    <button
+                      class="filter-btn"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        class="user-img"
+                        src="assets/images/dropdown-icon.svg"
+                        alt=""
+                      />
+                    </button>
+                    <ul class="dropdown-menu">
+                      <div class="team-roles">
+                        <p class="filter-title">Filter by Social Media</p>
+                        <img
+                          class="close-icon"
+                          src="assets/images/icon/cross-icon.svg"
+                          alt=""
+                        />
+                        <div class="filter-options">
+                          <div class="filter-checkbox">
+                            <input
+                              type="checkbox"
+                              id="snapchat"
+                              class="custom-checkbox"
+                            />
+                            <label for="snapchat"
+                              ><img
+                                class="filter-img"
+                                src="assets/images/icon/table-snapchat.svg"
+                                alt=""
+                            /></label>
+                          </div>
+                          <div class="filter-checkbox">
+                            <input
+                              type="checkbox"
+                              id="tiktok"
+                              class="custom-checkbox"
+                            />
+                            <label for="tiktok"
+                              ><img
+                                class="filter-img"
+                                src="assets/images/icon/table-tiktok.svg"
+                                alt=""
+                            /></label>
+                          </div>
+                          <div class="filter-checkbox">
+                            <input
+                              type="checkbox"
+                              id="YT"
+                              class="custom-checkbox"
+                            />
+                            <label for="YT"
+                              ><img
+                                class="filter-img"
+                                src="assets/images/icon/YT.svg"
+                                alt=""
+                            /></label>
+                          </div>
+                          <div class="filter-checkbox">
+                            <input
+                              type="checkbox"
+                              id="IG"
+                              class="custom-checkbox"
+                            />
+                            <label for="IG"
+                              ><img
+                                class="filter-img"
+                                src="assets/images/icon/table-instagram.svg"
+                                alt=""
+                            /></label>
+                          </div>
+                          <div class="filter-checkbox">
+                            <input
+                              type="checkbox"
+                              id="twitter"
+                              class="custom-checkbox"
+                            />
+                            <label for="twitter"
+                              ><img
+                                class="filter-img"
+                                src="assets/images/icon/table-twetter.svg"
+                                alt=""
+                            /></label>
+                          </div>
+                          <div class="filter-checkbox">
+                            <input
+                              type="checkbox"
+                              id="FB"
+                              class="custom-checkbox"
+                            />
+                            <label for="FB"
+                              ><img
+                                class="filter-img"
+                                src="assets/images/icon/fb.svg"
+                                alt=""
+                            /></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="apply-filter">
+                        <a class="button">Save</a>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-items">
+                <div style="background: #b7a29a" class="dashboard-box">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <p style="color: #000" class="box-text">
+                      estimated media reach
+                    </p>
+                    <span
+                      style="height: 39px; width: 39px; background: #c1afa8"
+                      class="calender-container"
+                    >
+                      <img src="assets/images/Like.svg" />
+                    </span>
+                  </div>
+                  <div class="d-flex">
+                    <h1 style="color: #000" class="box-number">
+                      14.6 <span class="box-unit"> b</span>
+                    </h1>
+                    <!-- <span class="box-event">events</span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="dashboard-table">
+                  <h3 class="main-heading table-heading-margin">
+                    Upcoming Events
+                  </h3>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Events</th>
+                        <th></th>
+                        <th>Date</th>
+                        <th>Attendees</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tr>
+                      <td>
+                        <img
+                          style="
+                            width: 49px;
+                            height: 49px;
+                            object-fit: cover;
+                            border-radius: 11px;
+                          "
+                          src="assets/images/Rectangleimg.png"
+                        />
+                      </td>
+                      <td style="padding-left: 0">
+                        <span class="table-img-content">
+                          <h5>Palm Tree NYE</h5>
+                        </span>
+                      </td>
+                      <td>12.21.2023</td>
+                      <td>
+                        <div></div>
+                        <div
+                          class="progress-section"
+                          data-aos="fade-left"
+                          data-aos-once="true"
+                        >
+                          <div class="task-progress">
+                            <progress
+                              id="prog"
+                              class="progress progress1"
+                              max="100"
+                              value="36"
+                            ></progress>
+                            <label for="prog">200/620</label>
+                          </div>
+                        </div>
+                      </td>
+                      <td><a class="manage-state">Manage</a></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="dashboard-table">
+                  <h3 class="main-heading table-heading-margin">
+                    Top Attendees
+                  </h3>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th></th>
+                        <th>Events</th>
+                        <th>Social media</th>
+                      </tr>
+                    </thead>
+                    <tr>
+                      <td>
+                        <img
+                          style="
+                            width: 31px;
+                            height: 31px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                          "
+                          src="assets/images/Rectangle-65.svg"
+                        />
+                      </td>
+                      <td style="padding-left: 0">
+                        <span class="table-img-content">
+                          <h5>Alix Earle</h5>
+                          <!-- <span>event</span> -->
+                        </span>
+                      </td>
+                      <td>12</td>
+                      <td>
+                        <div class="d-flex justify-content-between">
+                          <span
+                            style="width: 50px"
+                            class="d-flex align-items-center"
+                          >
+                            <span
+                              style="
+                                height: 18px;
+                                width: 18px;
+                                background: #000;
+                              "
+                              class="calender-container"
+                            >
+                              <img src="assets/images/table-instagram.svg" />
+                            </span>
+                            <span style="margin-left: 4px; font-size: 10px"
+                              >12 M</span
+                            >
+                          </span>
+                          <span
+                            style="width: 50px"
+                            class="d-flex align-items-center"
+                          >
+                            <span
+                              style="
+                                height: 18px;
+                                width: 18px;
+                                background: #000;
+                              "
+                              class="calender-container"
+                            >
+                              <img src="assets/images/table-twetter.svg" />
+                            </span>
+                            <span style="margin-left: 4px; font-size: 10px"
+                              >12 M</span
+                            >
+                          </span>
+                          <span
+                            style="width: 50px"
+                            class="d-flex align-items-center"
+                          >
+                            <span
+                              style="
+                                height: 18px;
+                                width: 18px;
+                                background: #000;
+                              "
+                              class="calender-container"
+                            >
+                              <img src="assets/images/table-snapchat.svg" />
+                            </span>
+                            <span style="margin-left: 4px; font-size: 10px"
+                              >12 M</span
+                            >
+                          </span>
+                          <span
+                            style="width: 50px"
+                            class="d-flex align-items-center"
+                          >
+                            <span
+                              style="
+                                height: 18px;
+                                width: 18px;
+                                background: #000;
+                              "
+                              class="calender-container"
+                            >
+                              <img src="assets/images/table-tiktok.svg" />
+                            </span>
+                            <span style="margin-left: 4px; font-size: 10px"
+                              >12 M</span
+                            >
+                          </span>
+                          <span
+                            style="width: 50px"
+                            class="d-flex align-items-center"
+                          >
+                            <span
+                              style="
+                                height: 18px;
+                                width: 18px;
+                                background: #000;
+                              "
+                              class="calender-container"
+                            >
+                              <img src="assets/images/table-instagram.svg" />
+                            </span>
+                            <span style="margin-left: 4px; font-size: 10px"
+                              >12 M</span
+                            >
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- main content area end -->
+        </div>
+      </div>
+    </div>
+    <!-- page container area end -->
+
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+      const allTime = document.getElementById("allTime");
+      const thisMonth = document.getElementById("thisMonth");
+      const thisQuarter = document.getElementById("thisQuarter");
+      const thisYear = document.getElementById("thisYear");
+      const custom = document.getElementById("custom");
+      allTime.style.background = "#000";
+      allTime.style.color = "#FFF";
+      allTime.addEventListener("click", function () {
+        allTime.style.background = "#000";
+        allTime.style.color = "#FFF";
+        thisMonth.style.background = "#FFF";
+        thisMonth.style.color = "#000";
+        thisQuarter.style.background = "#FFF";
+        thisQuarter.style.color = "#000";
+        thisYear.style.background = "#FFF";
+        thisYear.style.color = "#000";
+        custom.style.background = "#FFF";
+        custom.style.color = "#000";
+      });
+      thisMonth.addEventListener("click", function () {
+        thisMonth.style.background = "#000";
+        thisMonth.style.color = "#FFF";
+        allTime.style.background = "#FFF";
+        allTime.style.color = "#000";
+        thisQuarter.style.background = "#FFF";
+        thisQuarter.style.color = "#000";
+        thisYear.style.background = "#FFF";
+        thisYear.style.color = "#000";
+        custom.style.background = "#FFF";
+        custom.style.color = "#000";
+      });
+      thisQuarter.addEventListener("click", function () {
+        thisQuarter.style.background = "#000";
+        thisQuarter.style.color = "#FFF";
+        allTime.style.background = "#FFF";
+        allTime.style.color = "#000";
+        thisMonth.style.background = "#FFF";
+        thisMonth.style.color = "#000";
+        thisYear.style.background = "#FFF";
+        thisYear.style.color = "#000";
+        custom.style.background = "#FFF";
+        custom.style.color = "#000";
+      });
+      thisYear.addEventListener("click", function () {
+        thisYear.style.background = "#000";
+        thisYear.style.color = "#FFF";
+        allTime.style.background = "#FFF";
+        allTime.style.color = "#000";
+        thisMonth.style.background = "#FFF";
+        thisMonth.style.color = "#000";
+        thisQuarter.style.background = "#FFF";
+        thisQuarter.style.color = "#000";
+        custom.style.background = "#FFF";
+        custom.style.color = "#000";
+      });
+      custom.addEventListener("click", function () {
+        custom.style.background = "#000";
+        custom.style.color = "#FFF";
+        allTime.style.background = "#FFF";
+        allTime.style.color = "#000";
+        thisMonth.style.background = "#FFF";
+        thisMonth.style.color = "#000";
+        thisQuarter.style.background = "#FFF";
+        thisQuarter.style.color = "#000";
+        thisYear.style.background = "#FFF";
+        thisYear.style.color = "#000";
+      });
+    </script>
+    <script>
+      $(".selector").flatpickr({
+        mode: "range",
+        dateFormat: "m-d-Y",
+      });
+
+      $(".dropdown-menu").on("click", function (e) {
+        e.stopPropagation();
+      });
+
+      $(".close-icon").click(() => {
+        $(".dropdown-menu").removeClass("show");
+      });
+    </script>
+  </body>
+</html>

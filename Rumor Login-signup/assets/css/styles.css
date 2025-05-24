@@ -1,0 +1,396 @@
+@font-face {
+  font-family: "abc-diatype-light";
+  src: url(../fonts/ABC-Diatype-1.100/ABCDiatype-Light.ttf);
+}
+@font-face {
+  font-family: "abc-diatype-regular";
+  src: url(../fonts/ABC-Diatype-1.100/ABCDiatype-Regular.ttf);
+}
+@font-face {
+  font-family: "abc-diatype-medium";
+  src: url(../fonts/ABC-Diatype-1.100/ABCDiatype-Medium.ttf);
+}
+@font-face {
+  font-family: "Romie-Trial-Medium";
+  src: url(../fonts/ROMIE/RomieTrial-Medium.otf);
+}
+@font-face {
+  font-family: "Romie-Trial-Bold";
+  src: url(../fonts/ROMIE/RomieTrial-Bold.otf);
+}
+:root {
+  --primaryFontFamily: "abc-diatype-regular";
+  --romie-Med: "Romie-Trial-Medium";
+  --romie-Bold: "Romie-Trial-Bold";
+  --abc-light: "abc-diatype-light";
+  --abc-med: "abc-diatype-medium";
+  --primary-textColor: #1d1c1c;
+  --secondary-textColor: #787878;
+  --body-color: #f3f3f3;
+  --placeholder-color: #838282;
+}
+/* Scroll Bar */
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #3636368e;
+  border-radius: 20px;
+}
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+input[type="file"]:hover {
+  cursor: pointer;
+}
+body {
+  font-family: var(--primaryFontFamily);
+  background-color: var(--body-color);
+}
+button {
+  font-family: var(--abc-med);
+}
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.col-60 {
+  width: 60%;
+}
+.col-40 {
+  width: 40%;
+}
+.col-100 {
+  width: 100%;
+}
+.inner-container {
+  max-width: 475px;
+  margin: auto;
+}
+.login-details > h1 {
+  color: var(--primary-textColor);
+  font-family: var(--romie-Bold);
+  line-height: 85px;
+  font-size: 80px;
+  font-weight: 700;
+}
+.login-details > p {
+  color: var(--secondary-textColor);
+  font-family: var(--abc-light);
+  font-size: 18px;
+  line-height: 19px;
+  margin-bottom: 37px;
+}
+
+.login-screen-img {
+  position: relative;
+}
+
+.login-screen-img .main-img {
+  width: 100%;
+  /* height: calc(100vh - 60px); */
+  /* min-height: 600px; */
+  border-radius: 24px;
+  object-fit: cover;
+}
+.login-screen-img .secondary-img {
+  position: absolute;
+  bottom: -34px;
+  left: -208px;
+}
+
+.input {
+  background-color: #fff;
+  border-radius: 81px;
+  padding: 21px 24px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  font-family: var(--primaryFontFamily);
+}
+.input::placeholder {
+  color: #838282;
+}
+.input:focus {
+  outline: 1px solid #999;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+}
+.inputs {
+  display: flex;
+  gap: 12px;
+}
+.input-item {
+  width: 100%;
+}
+.submit-btn {
+  border-radius: 81px;
+  background: rgba(164, 136, 126, 0.8);
+  height: 51px;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  margin-top: 27px;
+  width: 100%;
+  border: none;
+  position: relative;
+  z-index: 2;
+}
+.submit-btn:hover {
+  background-color: rgba(164, 136, 126, 1);
+}
+
+.rumor-logo {
+  position: fixed;
+  bottom: 0;
+  width: 132px;
+  height: 132px;
+  left: -10px;
+}
+
+/* ============== sign up thanks =============== */
+.sign-up-thanks .rumor-text-logo {
+  margin-bottom: 60px;
+}
+.review-detail p {
+  font-size: 18px;
+}
+
+.sign-up-thanks .inner-container {
+  max-width: 591px;
+}
+
+.support-text {
+  color: #383838;
+}
+
+.forgot-password-btn {
+  color: #000;
+  text-align: center;
+}
+.forgot-password-btn a {
+  color: #000;
+}
+
+/* ============ company profile ============== */
+.progress-bar {
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  border-radius: 5px;
+}
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 5px;
+  background-color: #b6a099;
+  border-radius: 5px;
+}
+.company-fields {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+.upload-logo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+.upload-logo input {
+  width: 162px;
+  height: 162px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+.upload-logo img {
+  height: 162px;
+  width: 162px;
+}
+.upload-logo label {
+  font-size: 14px;
+}
+.company-logo-text {
+  font-family: var(--romie-Bold);
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* ============== add team member ============= */
+.add-team-fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.team-member-details > h1 {
+  font-size: 56px;
+  line-height: 61px;
+  text-align: center;
+}
+.second-step.progress-bar::before {
+  width: 100%;
+}
+.add-another-member {
+  font-size: 14px;
+  color: #0f0f0f;
+  margin-top: 8px;
+  text-decoration: underline;
+}
+.next-btn {
+  width: 414px;
+  max-width: 100%;
+  margin: auto;
+}
+.upload-logo img {
+  margin: auto;
+}
+.upload-logo input {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.team-member-screen .inner-container {
+  max-width: 880px;
+  margin: auto;
+}
+.team-member-screen .progress-bar.second-step {
+  max-width: 591px;
+  margin-inline: auto;
+}
+
+.team-member-screen .input-fields {
+  max-width: 591px;
+  margin: auto;
+}
+
+.privacy-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.privacy-checkbox span {
+  font-size: 13px;
+  color: #383838;
+}
+.privacy-checkbox a {
+  color: #383838;
+}
+
+/* ========= Landing page ============ */
+.landing-page-links {
+  font-size: 13px;
+  color: #838282;
+  position: absolute;
+  bottom: 20px;
+  left: 15%;
+}
+.landing-page-links a {
+  color: #838282;
+}
+
+/* nice select style */
+.custom-select-menu {
+  width: 100%;
+  border-radius: 50px;
+  min-height: 62px;
+  padding-top: 8px;
+  font-size: 16px;
+}
+.custom-select-menu ul.list {
+  width: 100%;
+  top: 0;
+  border-radius: 20px;
+}
+
+/* utility classes */
+.custom-checkbox {
+  filter: brightness(100%) saturate(0%) contrast(300%);
+  width: 24px;
+  height: 24px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-35 {
+  margin-bottom: 35px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.mt-35 {
+  margin-top: 35px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.pt-80 {
+  padding-top: 80px;
+}
+.fs-56 {
+  font-size: 56px !important;
+}
+.text-center {
+  text-align: center;
+}
+.align-self-start {
+  align-self: flex-start;
+}
+
+@media (width<992px) {
+  .col-40 {
+    display: none;
+  }
+  .col-60 {
+    width: 100%;
+  }
+  .login-details,
+  .review-detail {
+    text-align: center;
+  }
+}
+
+@media (width<=1024px) {
+  .login-screen-img .secondary-img {
+    left: -166px;
+  }
+}
+@media (width<=425px) {
+  .login-details > h1 {
+    font-size: 55px;
+  }
+  .rumor-logo {
+    max-width: 90px;
+  }
+}
+@media (width<768px) {
+  .company-fields,
+  .add-team-fields {
+    grid-template-columns: 1fr;
+  }
+}

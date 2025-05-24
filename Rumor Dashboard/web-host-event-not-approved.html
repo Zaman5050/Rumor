@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/jquery-nice-select-1.1.0/css/nice-select.css"
+    />
+    <link rel="stylesheet" href="assets/css/default-css.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/style-z.css" />
+  </head>
+
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <!-- preloader area start -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+      <!-- sidebar menu area start -->
+      <div class="sidebar-menu">
+        <div class="sidebar-header">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/images/icon/sidebar-logo.svg" alt="logo"
+            /></a>
+          </div>
+        </div>
+
+        <div class="main-menu">
+          <div class="menu-inner1">
+            <nav>
+              <ul class="metismenu" id="">
+                <li>
+                  <a href="host-web-dashboard.html">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/dashboard.svg"
+                    />
+
+                    <span>dashboard</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="web-host-events.html">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/events.svg"
+                    />
+
+                    <span>Events</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chat.html">
+                    <img class="whiteIcon" src="assets/images/icon/chat.svg" />
+                    <span>Chat</span>
+                  </a>
+                </li>
+                <li class="accordion user-tab-accordion">
+                  <a
+                    href="#user-dropdown"
+                    data-bs-toggle="collapse"
+                    class="accordion-button collapsed"
+                  >
+                    <img src="assets/images/icon/user.svg" alt="User Icon" />
+                    <span>User</span>
+                  </a>
+                  <ul class="accordion-collapse collapse" id="user-dropdown">
+                    <li>
+                      <a href="Users-members.html">
+                        <span>Members</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="Users non-members.html">
+                        <span>Non-members</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="Team.html">
+                    <img src="assets/images/icon/team.svg" />
+                    <span>Team</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Settings.html">
+                    <img src="assets/images/icon/Settings.svg" />
+                    <span>Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar menu area end -->
+      <!-- main content area start -->
+      <div class="main-content">
+        <div class="main-content-inner">
+          <!-- Main inner content -->
+          <div>
+            <div class="nav-btn pull-left">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- --------------------------Start Coding from here------------------------------------ -->
+          <div class="go-back-container">
+            <img src="assets/images/arrow-chevron-left.svg" />
+            <a href="web-host-create-event-host.html">Go back</a>
+          </div>
+
+          <div class="dashboard-main-headings">
+            <h1 class="main-heading">Events</h1>
+          </div>
+
+          <div class="events-profile-container">
+            <div
+              class="events-profile-left-container align-items-start justify-content-between"
+            >
+              <div style="gap: 30px" class="d-flex align-items-center">
+                <div class="events-profile-img-container events-profile-image">
+                  <img
+                    class="events-profile-image"
+                    src="assets/images/event-profile-img.svg"
+                  />
+                </div>
+                <div class="">
+                  <div class="event-profile-img-cotent">
+                    <h2 style="font-size: 24px" class="main-heading">
+                      H.Wood Homecoming
+                    </h2>
+                    <div class="img-content-details">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-2"
+                      >
+                        <span class="d-flex align-items-center">
+                          <img src="assets/images/calendar-icon.svg" />
+                          <p class="date-text">Date:</p>
+                        </span>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center date-bottom-margin"
+                      >
+                        <h5
+                          style="font-size: 16px; font-weight: 400"
+                          class="main-heading"
+                        >
+                          February 9, 2024
+                        </h5>
+                      </div>
+                      <span class="d-flex align-items-center mb-2">
+                        <img src="assets/images/calendar-icon.svg" />
+                        <p class="date-text">Location:</p>
+                      </span>
+                      <h5
+                        style="font-size: 16px; font-weight: 400"
+                        class="main-heading date-bottom-margin"
+                      >
+                        Wynn Resorts Las Vegas, NV 89109
+                      </h5>
+                      <span
+                        class="d-flex align-items-center date-bottom-margin"
+                      >
+                        <p class="date-text">Max Capacity:</p>
+                        <h5
+                          style="font-size: 16px; font-weight: 400"
+                          class="main-heading"
+                        >
+                          4,000
+                        </h5>
+                      </span>
+                      <span class=" ">
+                        <p class="date-text">Host:</p>
+                        <h5
+                          style="font-size: 16px; font-weight: 400"
+                          class="main-heading"
+                        >
+                          Uncommon Entertainment & H Wood Group
+                        </h5>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <a
+                  href="web-host-events-page1.html"
+                  style="
+                    font-size: 14px;
+                    height: 36px;
+                    border: 1px solid #d4c1b9;
+                    background: #d4c1b9;
+                    width: 153px;
+                  "
+                  class="create-event-button mb-3"
+                >
+                  Pending Approval
+                </a>
+                <a
+                  style="
+                    padding: 1px 21px;
+                    font-size: 14px;
+                    height: 36px;
+                    border: 1px solid #d4c1b9;
+                    background: #d5d5d5;
+                  "
+                  class="create-event-button mb-3"
+                >
+                  Edit Event
+                </a>
+                <a
+                  style="
+                    padding: 1px 21px;
+                    font-size: 14px;
+                    height: 36px;
+                    border: 1px solid var(--mono-black-50, #787878);
+                    background: #383838;
+                    color: #ffff;
+                  "
+                  class="create-event-button mb-3"
+                >
+                  Delete Event
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="event-profile-buttons-container d-flex justify-content-between align-items-center mb-4"
+          >
+            <div class="dashboard-button-container">
+              <a
+                style="width: 153px; padding: 0 20px"
+                href="#"
+                id="allTime"
+                class="dashboard-anchors ristrick-buttons"
+              >
+                Invite from Rumor
+              </a>
+              <a
+                style="width: 126px; padding: 0 20px"
+                id="thisMonth"
+                class="dashboard-anchors ristrick-buttons wrapper"
+              >
+                Add Attendee
+                <div class="tooltip">
+                  Cannot invite attendees until event is approved. <br />
+                  If this is urgent, please contact us at support@joinrumor.com
+                </div>
+              </a>
+              <a
+                style="width: 157px; padding: 0 20px"
+                id="thisQuarter"
+                class="dashboard-anchors ristrick-buttons"
+                >Upload list via CSV</a
+              >
+              <a
+                style="width: 120px; padding: 0 20px"
+                id="thisYear"
+                class="dashboard-anchors ristrick-buttons"
+                >Signup Form</a
+              >
+            </div>
+            <div style="max-width: 314px; width: 100%">
+              <input
+                style="background-image: url('assets/images/search-normal.svg')"
+                class="event-profile-search-bar"
+                type="text"
+                placeholder="Search by name"
+              />
+            </div>
+          </div>
+
+          <div class="event-profile-table-container">
+            <ul
+              style="border-bottom: 1.6px solid #e9e9e9"
+              class="nav nav-pills mb-3 d-flex align-items-center"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li
+                class="nav-item d-flex align-items-center"
+                role="presentation"
+              >
+                <button
+                  class="invited-tab active"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  Invited
+                </button>
+                <span
+                  style="
+                    height: 17px;
+                    width: 17px;
+                    background: #d5dade;
+                    margin-right: 25px;
+                  "
+                  class="calender-container"
+                >
+                  <span style="font-size: 6.6px">33</span>
+                </span>
+              </li>
+              <li
+                class="nav-item d-flex align-items-center"
+                role="presentation"
+              >
+                <button
+                  class="invited-tab"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                >
+                  Requests
+                </button>
+                <span
+                  style="
+                    height: 17px;
+                    width: 17px;
+                    background: #fae0e0;
+                    margin-right: 25px;
+                  "
+                  class="calender-container"
+                >
+                  <span style="font-size: 6.6px">0</span>
+                </span>
+              </li>
+              <li
+                class="nav-item d-flex align-items-center"
+                role="presentation"
+              >
+                <button
+                  class="invited-tab"
+                  id="pills-contact-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-contact"
+                  aria-selected="false"
+                >
+                  Negotiating
+                </button>
+                <span
+                  style="
+                    height: 17px;
+                    width: 17px;
+                    background: #fae0e0;
+                    margin-right: 25px;
+                  "
+                  class="calender-container"
+                >
+                  <span style="font-size: 6.6px">0</span>
+                </span>
+              </li>
+              <li
+                class="nav-item d-flex align-items-center"
+                role="presentation"
+              >
+                <button
+                  class="invited-tab"
+                  id="Confirmed"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-Confirmed"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-Confirmed"
+                  aria-selected="false"
+                >
+                  Confirmed
+                </button>
+                <span
+                  style="
+                    height: 17px;
+                    width: 17px;
+                    background: #d5dade;
+                    margin-right: 25px;
+                  "
+                  class="calender-container"
+                >
+                  <span style="font-size: 6.6px">200</span>
+                </span>
+              </li>
+              <li
+                class="nav-item d-flex align-items-center"
+                role="presentation"
+              >
+                <button
+                  class="invited-tab"
+                  id="Declined"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-Declined"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-Declined"
+                  aria-selected="false"
+                >
+                  Declined
+                </button>
+                <span
+                  style="
+                    height: 17px;
+                    width: 17px;
+                    background: #fae0e0;
+                    margin-right: 25px;
+                  "
+                  class="calender-container"
+                >
+                  <span style="font-size: 6.6px">0</span>
+                </span>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+              >
+                <div class="dashboard-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <!-- <th></th> -->
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>
+                          <div class="d-flex align-items-center">
+                            <span>Guests</span>
+                            <img
+                              class="ms-1"
+                              src="assets/images/icon/info-icon.svg"
+                              alt=""
+                            />
+                          </div>
+                        </th>
+                        <th>Category</th>
+                        <th>List</th>
+                        <th>User Type</th>
+                        <th>VIA</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tr style="border: none">
+                      <td colspan="9">
+                        <div class="no-attendees">
+                          <p>There are currently no attendees for this event</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+              >
+                B
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-contact"
+                role="tabpanel"
+                aria-labelledby="pills-contact-tab"
+              >
+                C
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-Confirmed"
+                role="tabpanel"
+                aria-labelledby="Confirmed"
+              >
+                D
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-Declined"
+                role="tabpanel"
+                aria-labelledby="Declined"
+              >
+                E
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="dashboard-button-container">
+                <a href="#" id="allTime" class="dashboard-anchors">All Times</a>
+                <a id="thisMonth" class="dashboard-anchors">This Month</a>
+                <a id="thisQuarter" class="dashboard-anchors">This Year</a>
+                <a id="thisYear" class="dashboard-anchors">Last Month</a>
+              
+                  <span id="" class="calender-container selector">
+                      <img src="assets/images/calendar-icon.svg">
+                  </span>
+                <input type="hidden" name="custom_date_range" placeholder="Custom" class="dashboard_button range-picker" id="custom">
+          </div> -->
+
+          <!-- main content area end -->
+          <!-- --------------------------------------------invite guest popup--------------------------------- -->
+
+          <!-- ----------------------------------------end--------------------------------------------- -->
+          <!-- -----------------------------------------manage guest poppup------------------------->
+
+          <!--------------------------------------------------end------------------------------------>
+        </div>
+      </div>
+    </div>
+    <!-- page container area end -->
+
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- <script>
+        const allTime = document.getElementById("allTime");
+        const thisMonth = document.getElementById("thisMonth");
+        const thisQuarter = document.getElementById("thisQuarter");
+        const thisYear = document.getElementById("thisYear");
+        const custom = document.getElementById("custom");
+        allTime.style.background="#000"
+        allTime.style.color="#FFF"
+        allTime.addEventListener('click',function(){
+        allTime.style.background="#000"
+        allTime.style.color="#FFF"
+        thisMonth.style.background="#FFF"
+        thisMonth.style.color="#000"
+        thisQuarter.style.background="#FFF"
+        thisQuarter.style.color="#000"
+        thisYear.style.background="#FFF"
+        thisYear.style.color="#000"
+        custom.style.background="#FFF"
+        custom.style.color="#000"
+        });
+        thisMonth.addEventListener('click',function(){
+        thisMonth.style.background="#000"
+        thisMonth.style.color="#FFF"
+        allTime.style.background="#FFF"
+        allTime.style.color="#000"
+        thisQuarter.style.background="#FFF"
+        thisQuarter.style.color="#000"
+        thisYear.style.background="#FFF"
+        thisYear.style.color="#000"
+        custom.style.background="#FFF"
+        custom.style.color="#000"
+        });
+        thisQuarter.addEventListener('click',function(){
+        thisQuarter.style.background="#000"
+        thisQuarter.style.color="#FFF"
+        allTime.style.background="#FFF"
+        allTime.style.color="#000"
+        thisMonth.style.background="#FFF"
+        thisMonth.style.color="#000"
+        thisYear.style.background="#FFF"
+        thisYear.style.color="#000"
+        custom.style.background="#FFF"
+        custom.style.color="#000"
+        });
+        thisYear.addEventListener('click',function(){
+        thisYear.style.background="#000"
+        thisYear.style.color="#FFF"
+        allTime.style.background="#FFF"
+        allTime.style.color="#000"
+        thisMonth.style.background="#FFF"
+        thisMonth.style.color="#000"
+        thisQuarter.style.background="#FFF"
+        thisQuarter.style.color="#000"
+        custom.style.background="#FFF"
+        custom.style.color="#000"
+        });
+        custom.addEventListener('click',function(){
+        custom.style.background="#000"
+        custom.style.color="#FFF"
+        allTime.style.background="#FFF"
+        allTime.style.color="#000"
+        thisMonth.style.background="#FFF"
+        thisMonth.style.color="#000"
+        thisQuarter.style.background="#FFF"
+        thisQuarter.style.color="#000"
+        thisYear.style.background="#FFF"
+        thisYear.style.color="#000"
+        });
+    </script> -->
+    <script>
+      $(document).ready(function () {
+        $("select").niceSelect();
+      });
+    </script>
+  </body>
+</html>

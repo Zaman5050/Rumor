@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Members</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/icon/rumor-logo.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/default-css.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styleu.css" />
+  </head>
+
+  <body>
+    <!-- preloader area start -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+      <!-- sidebar menu area start -->
+      <div class="sidebar-menu">
+        <div class="sidebar-header">
+          <div class="logo">
+            <a href=""
+              ><img src="assets/images/icon/sidebar-logo.svg" alt="logo"
+            /></a>
+          </div>
+        </div>
+
+        <div class="main-menu">
+          <div class="menu-inner1">
+            <nav>
+              <ul class="metismenu" id="">
+                <li>
+                  <a href="host-web-dashboard.html">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/dashboard.svg"
+                    />
+
+                    <span>dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="web-host-events.html">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/events.svg"
+                    />
+
+                    <span>Events</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chat.html">
+                    <img class="whiteIcon" src="assets/images/icon/chat.svg" />
+                    <span>Chat</span>
+                  </a>
+                </li>
+                <li class="accordion user-tab-accordion">
+                  <a
+                    href="#user-dropdown"
+                    data-bs-toggle="collapse"
+                    class="accordion-button collapsed"
+                  >
+                    <img src="assets/images/icon/user.svg" alt="User Icon" />
+                    <span>User</span>
+                  </a>
+                  <ul class="accordion-collapse collapse" id="user-dropdown">
+                    <li class="active">
+                      <a href="Users-members.html">
+                        <span>Members</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="Users non-members.html">
+                        <span>Non-members</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="Team.html">
+                    <img src="assets/images/icon/team.svg" />
+                    <span>Team</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Settings.html">
+                    <img src="assets/images/icon/Settings.svg" />
+                    <span>Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar menu area end -->
+      <!-- main content area start -->
+      <div class="main-content">
+        <div class="main-content-inner">
+          <!-- Main inner content -->
+          <div>
+            <div class="nav-btn pull-left">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="dashboard-header mb-20">
+            <h1>Members</h1>
+            <div class="d-flex align-items-center">
+              <a href="" class="button-lg user-fav-btn">
+                <img
+                  class="me-2"
+                  src="assets/images/icon/heart-icon.svg"
+                  alt=""
+                />
+                <span>View Favorites</span>
+              </a>
+              <div class="dropdown">
+                <button
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="user-img"
+                    src="assets/images/icon/user-img.png"
+                    alt=""
+                  />
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-3">
+              <label for="User name" class="form-label">User Name</label>
+              <input
+                type="email"
+                class="input"
+                id="User name"
+                placeholder="Enter User name"
+              />
+            </div>
+            <div class="col-md-3">
+              <label for="Location" class="form-label">Location</label>
+              <input
+                type="text"
+                class="input"
+                id="Location"
+                placeholder="Search City"
+              />
+            </div>
+            <div class="col-md-3">
+              <label for="followers" class="form-label"># of Followers</label>
+              <input
+                type="text"
+                class="input"
+                id="followers"
+                placeholder="# of Followers"
+              />
+            </div>
+            <div class="col-md-3">
+              <label for="followers" class="form-label">&nbsp</label>
+              <div class="filter-by-category">
+                <p class="fs-12">Member Category</p>
+                <div class="dropdown">
+                  <button
+                    class="filter-btn"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      class="user-img"
+                      src="assets/images/icon/filter-icon.svg"
+                      alt=""
+                    />
+                  </button>
+                  <ul class="dropdown-menu">
+                    <p class="filter-title">Filter by Category</p>
+                    <img
+                      class="close-icon"
+                      src="assets/images/icon/cross-icon.svg"
+                      alt=""
+                    />
+                    <div class="filter-options">
+                      <div class="filter-checkbox">
+                        <input
+                          id="Influencer"
+                          type="checkbox"
+                          class="custom-checkbox"
+                        />
+                        <label for="Influencer">Influencer</label>
+                      </div>
+                      <div class="filter-checkbox">
+                        <input
+                          id="Athlele"
+                          type="checkbox"
+                          class="custom-checkbox"
+                        />
+                        <label for="Athlele">Athlele</label>
+                      </div>
+                      <div class="filter-checkbox">
+                        <input
+                          id="model"
+                          type="checkbox"
+                          class="custom-checkbox"
+                        />
+                        <label for="model">Model</label>
+                      </div>
+                      <div class="filter-checkbox">
+                        <input
+                          id="Podcaster"
+                          type="checkbox"
+                          class="custom-checkbox"
+                        />
+                        <label for="Podcaster">Podcaster</label>
+                      </div>
+                      <div class="filter-checkbox">
+                        <input
+                          id="Actor"
+                          type="checkbox"
+                          class="custom-checkbox"
+                        />
+                        <label for="Actor">Actor</label>
+                      </div>
+                      <div class="filter-checkbox">
+                        <input
+                          id="YouTuber"
+                          type="checkbox"
+                          class="custom-checkbox"
+                        />
+                        <label for="YouTuber">YouTuber</label>
+                      </div>
+                      <div class="filter-checkbox">
+                        <input
+                          id="Entrepreneur"
+                          type="checkbox"
+                          class="custom-checkbox"
+                        />
+                        <label for="Entrepreneur">Entrepreneur</label>
+                      </div>
+                      <div class="filter-checkbox">
+                        <input
+                          id="Musician"
+                          type="checkbox"
+                          class="custom-checkbox"
+                        />
+                        <label for="Musician">Musician</label>
+                      </div>
+                    </div>
+                    <button class="save-filter-button">Save</button>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="listing-table mt-5">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Member</th>
+                  <th class="social-before">
+                    <img
+                      class="social-link"
+                      src="assets/images/icon/insta.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    <img
+                      class="social-link"
+                      src="assets/images/icon/twitter.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    <img
+                      class="social-link"
+                      src="assets/images/icon/snapchat.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    <img
+                      class="social-link"
+                      src="assets/images/icon/tiktok.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    <img
+                      class="social-link"
+                      src="assets/images/icon/fb.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    <img
+                      class="social-link"
+                      src="assets/images/icon/YT.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>Total</th>
+                  <th>Events</th>
+                  <th>Category</th>
+                  <th>City</th>
+                  <th>Favorites</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="table-member-detail">
+                      <img src="assets/images/icon/table-user-img.png" alt="" />
+                      <span>Dakota Fanning</span>
+                    </div>
+                  </td>
+                  <td>4M</td>
+                  <td>4M</td>
+                  <td>4M</td>
+                  <td>4M</td>
+                  <td>4M</td>
+                  <td>4M</td>
+                  <td>4M</td>
+                  <td>2</td>
+                  <td>Actor</td>
+                  <td>New York</td>
+                  <td>
+                    <img src="assets/images/icon/favorite.svg" alt="" />
+                  </td>
+                  <td>
+                    <a href="Users 2.html" class="view-button"> View </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-member-detail">
+                      <img src="assets/images/icon/table-user-img.png" alt="" />
+                      <span>Dakota Fanning</span>
+                    </div>
+                  </td>
+                  <td>4M</td>
+                  <td>4M</td>
+                  <td>4M</td>
+                  <td>4M</td>
+                  <td>4M</td>
+                  <td>4M</td>
+                  <td>4M</td>
+                  <td>2</td>
+                  <td>Actor</td>
+                  <td>New York</td>
+                  <td>
+                    <img src="assets/images/icon/favorite-red.svg" alt="" />
+                  </td>
+                  <td>
+                    <button href="" class="view-button">View</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- page container area end -->
+
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+
+    <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/scripts.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Prevent dropdown from closing on click inside the menu
+        $(".dropdown-menu").on("click", function (e) {
+          e.stopPropagation();
+        });
+        $(".close-icon").click(() => {
+          $(".dropdown-menu").removeClass("show");
+        });
+      });
+    </script>
+  </body>
+</html>

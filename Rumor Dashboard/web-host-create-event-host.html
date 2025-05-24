@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/jquery-nice-select-1.1.0/css/nice-select.css"
+    />
+    <link rel="stylesheet" href="assets/css/default-css.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/style-z.css" />
+  </head>
+
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <!-- preloader area start -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+      <!-- sidebar menu area start -->
+      <div class="sidebar-menu">
+        <div class="sidebar-header">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/images/icon/sidebar-logo.svg" alt="logo"
+            /></a>
+          </div>
+        </div>
+
+        <div class="main-menu">
+          <div class="menu-inner1">
+            <nav>
+              <ul class="metismenu" id="">
+                <li>
+                  <a href="host-web-dashboard.html">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/dashboard.svg"
+                    />
+
+                    <span>dashboard</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="web-host-events.html">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/events.svg"
+                    />
+
+                    <span>Events</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chat.html">
+                    <img class="whiteIcon" src="assets/images/icon/chat.svg" />
+                    <span>Chat</span>
+                  </a>
+                </li>
+                <li class="accordion user-tab-accordion">
+                  <a
+                    href="#user-dropdown"
+                    data-bs-toggle="collapse"
+                    class="accordion-button collapsed"
+                  >
+                    <img src="assets/images/icon/user.svg" alt="User Icon" />
+                    <span>User</span>
+                  </a>
+                  <ul class="accordion-collapse collapse" id="user-dropdown">
+                    <li>
+                      <a href="Users-members.html">
+                        <span>Members</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="Users non-members.html">
+                        <span>Non-members</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/icon/team.svg" />
+                    <span>Team</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/icon/Settings.svg" />
+                    <span>Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar menu area end -->
+      <!-- main content area start -->
+      <div class="main-content">
+        <div class="main-content-inner">
+          <!-- Main inner content -->
+          <div>
+            <div class="nav-btn pull-left">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- --------------------------Start Coding from here------------------------------------ -->
+          <div class="d-flex justify-content-between">
+            <div>
+              <div class="go-back-container">
+                <img src="assets/images/arrow-chevron-left.svg" />
+                <a href="web-host-creat-event.html">Go back</a>
+              </div>
+              <div class="dashboard-main-headings">
+                <h1 class="main-heading">Create Events</h1>
+              </div>
+            </div>
+            <div>
+              <img src="assets/images/heading-img.svg" />
+            </div>
+          </div>
+          <div class="create-event-container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="create-event-left-container mobile-margin-bottom">
+                  <label class="create-event-labels">Host</label>
+                  <input
+                    class="create-event-input"
+                    type="text"
+                    placeholder="Uncommon Entertainment"
+                  />
+                  <div class="pb-3">
+                    <a
+                      href="#"
+                      style="
+                        font-size: 14px;
+                        text-decoration: underline;
+                        color: #0f0f0f;
+                        color: var(--mono-black-70, #4a4a4a);
+                      "
+                      >Add another host</a
+                    >
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input
+                        class="create-event-input"
+                        type="text"
+                        placeholder="Host organization name"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        class="create-event-input"
+                        type="text"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="checkbox-main-container">
+                      <label class="checkbox-container">
+                        Allow host to edit events
+                        <input type="radio" name="radio" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <p style="margin-bottom: 32px" class="input-alert-msg">
+                      Inviting a host will give them access to co-manage the
+                      event
+                    </p>
+                  </div>
+
+                  <label class="create-event-labels mb-2">Lists</label>
+                  <p class="input-alert-msg mb-4">
+                    Only City & State will be viewable by Members until
+                    Attendees are confirmed
+                  </p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input
+                        class="create-event-input mb-2"
+                        type="text"
+                        placeholder="Master"
+                      />
+                    </div>
+                  </div>
+                  <div class="pb-3">
+                    <a
+                      href="#"
+                      style="
+                        font-size: 14px;
+                        text-decoration: underline;
+                        color: #0f0f0f;
+                        color: var(--mono-black-70, #4a4a4a);
+                      "
+                      >Add another list</a
+                    >
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="create-event-labels">Entry</label>
+                      <select
+                        class="create-event-input"
+                        placeholder="Event type"
+                      ></select>
+                      <div class="nice-select create-event-input" tabindex="0">
+                        <span class="current">One time</span>
+                        <ul class="list">
+                          <li data-value="0" class="option focus selected">
+                            Limited
+                          </li>
+                          <li data-value="1" class="option">Unlimited</li>
+                        </ul>
+                      </div>
+                      <input
+                        class="create-event-input"
+                        type="text"
+                        placeholder="Enter number"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <div
+                    style="margin-bottom: 20px"
+                    class="create-event-left-container"
+                  >
+                    <label class="create-event-labels mb-2"
+                      >Questionnaire</label
+                    >
+                    <p class="input-alert-msg mb-4">
+                      Inviting a host will give them access to co-manage the
+                      event
+                    </p>
+                    <select
+                      class="create-event-input"
+                      placeholder="Event type"
+                    ></select>
+                    <div
+                      class="nice-select create-event-input mb-0"
+                      tabindex="0"
+                    >
+                      <span class="current">On</span>
+                      <ul class="list">
+                        <li data-value="0" class="option focus selected">On</li>
+                        <li data-value="1" class="option">Off</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <!-- <div class="row">
+                                <div class="col-md-6">
+                                    <a class="img-upload-container mobile-margin-bottom">
+                                        <div class="text-center">
+                                            <img class="mb-3" src="assets/images/solar_upload-outline.svg">
+                                            <p class="mb-3">Upload event flyer</p>
+                                            <ul class="upload-img-list">
+                                                <li style="width: 50px; margin: auto;">24 x 36</li>
+                                                <li style="width: 92px; margin: auto;">Under 200 MB</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="img-upload-container">
+                                        <div class="text-center">
+                                            <img class="mb-3" src="assets/images/solar_upload-outline.svg">
+                                            <p class="mb-3">Upload cover photo</p>
+                                            <ul class="upload-img-list">
+                                                <li style="width: 63px; margin: auto;">430 x 160</li>
+                                                <li style="width: 92px; margin: auto;">Under 200 MB</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div> -->
+                    </div>
+                  </div>
+                  <div style="height: 100%" class="create-event-left-container">
+                    <label style="font-size: 24px" class="create-event-labels"
+                      >Questionnaire</label
+                    >
+                    <div class="row">
+                      <div class="col-md-12">
+                        <label class="create-event-labels">Question 1</label>
+                        <input
+                          class="create-event-input"
+                          type="text"
+                          placeholder="Add question"
+                        />
+                      </div>
+                      <div class="col-md-12">
+                        <label class="create-event-labels">Question 2</label>
+                        <input
+                          class="create-event-input"
+                          type="text"
+                          placeholder="Add question"
+                        />
+                      </div>
+                    </div>
+                    <div class="pb-3">
+                      <a
+                        href="#"
+                        style="
+                          font-size: 14px;
+                          text-decoration: underline;
+                          color: #0f0f0f;
+                          color: var(--mono-black-70, #4a4a4a);
+                        "
+                        >Add another question</a
+                      >
+                    </div>
+                    <div class="checkbox-main-container">
+                      <label class="checkbox-container"
+                        >Allow Members to request Plus 1s?
+                        <input type="radio" name="radio1" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="row for-both-side-balance">
+                      <div class="col-md-6">
+                        <a class="create-event-button mobile-margin-bottom"
+                          >Save as draft</a
+                        >
+                      </div>
+                      <div class="col-md-6">
+                        <a
+                          href="web-host-event-not-approved.html"
+                          style="
+                            border: none;
+                            background: rgba(164, 136, 126, 0.8);
+                          "
+                          class="create-event-button"
+                          >Submit for Approval</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- main content area end -->
+        </div>
+      </div>
+    </div>
+    <!-- page container area end -->
+
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      $(".selector-date").flatpickr({
+        // mode: "range",
+        dateFormat: "m-d-Y",
+        onOpen: [
+          function (selectedDates, dateStr, instance) {
+            const iconRotate = document.querySelector(".date-arrow-icon");
+            iconRotate.style.transform = "rotate(-180deg)";
+          },
+        ],
+        onClose: function (selectedDates, dateStr, instance) {
+          const iconRotate = document.querySelector(".date-arrow-icon");
+          iconRotate.style.transform = "rotate(0deg)";
+        },
+      });
+    </script>
+    <script>
+      $(".selector-time").flatpickr({
+        // mode: "range",
+        dateFormat: "m-d-Y",
+        enableTime: true,
+        noCalendar: true,
+        dateFormat: "H:i",
+        time_24hr: true,
+      });
+    </script>
+    <script>
+      $(".selector-date-time").flatpickr({
+        // mode: "range",
+        enableTime: true,
+        dateFormat: "Y-m-d H:i",
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $("select").niceSelect();
+      });
+    </script>
+  </body>
+</html>

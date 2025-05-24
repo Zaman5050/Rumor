@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Rumor Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/icon/favicon.ico"
+    />
+    <link rel="stylesheet" href="assets/css/default-css.css" />
+    <!-- nice select -->
+    <link
+      rel="stylesheet"
+      href="assets/jquery-nice-select-1.1.0/css/nice-select.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <img class="rumor-logo" src="assets/images/icon/rumor-logo.svg" alt="" />
+      <div class="wrapper">
+        <div class="col-100 team-member-screen">
+          <div class="inner-container">
+            <div class="progress-bar second-step mb-35"></div>
+            <div class="login-details team-member-details mb-60">
+              <h1>Add any other team members to help you manage your events</h1>
+            </div>
+            <div class="input-fields">
+              <div class="append-input-fields">
+                <div class="add-team-fields">
+                  <div class="input-item">
+                    <input class="input" type="text" placeholder="Name" />
+                  </div>
+                  <div class="input-item">
+                    <input
+                      class="input"
+                      type="email"
+                      placeholder="email@domain.com"
+                    />
+                  </div>
+                  <select name="" id="" class="custom-select-menu">
+                    <option value="">Role</option>
+                    <option value="">Role</option>
+                    <option value="">Role</option>
+                  </select>
+                </div>
+              </div>
+              <a class="add-another-member">Add another</a>
+              <div class="next-btn">
+                <button class="submit-btn">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+
+    <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".custom-select-menu").niceSelect();
+      });
+    </script>
+  </body>
+</html>

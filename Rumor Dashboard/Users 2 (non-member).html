@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Users View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/icon/rumor-logo.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/default-css.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styleu.css" />
+  </head>
+
+  <body>
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+      <!-- sidebar menu area start -->
+      <div class="sidebar-menu">
+        <div class="sidebar-header">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/images/icon/sidebar-logo.svg" alt="logo"
+            /></a>
+          </div>
+        </div>
+
+        <div class="main-menu">
+          <div class="menu-inner1">
+            <nav>
+              <ul class="metismenu" id="">
+                <li>
+                  <a href="host-web-dashboard.html">
+                    <img src="assets/images/icon/dashboard.svg" />
+                    <span>dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="web-host-events.html">
+                    <img src="assets/images/icon/events.svg" />
+                    <span>Events</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chat.html">
+                    <img class="whiteIcon" src="assets/images/icon/chat.svg" />
+                    <span>Chat</span>
+                  </a>
+                </li>
+                <li class="accordion user-tab-accordion">
+                  <a
+                    href="#user-dropdown"
+                    data-bs-toggle="collapse"
+                    class="accordion-button collapsed"
+                  >
+                    <img src="assets/images/icon/user.svg" alt="User Icon" />
+                    <span>User</span>
+                  </a>
+                  <ul class="accordion-collapse collapse" id="user-dropdown">
+                    <li>
+                      <a href="Users-members.html">
+                        <span>Members</span>
+                      </a>
+                    </li>
+                    <li class="active">
+                      <a href="Users non-members.html">
+                        <span>Non-members</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="Team.html">
+                    <img src="assets/images/icon/team.svg" />
+                    <span>Team</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Settings.html">
+                    <img src="assets/images/icon/Settings.svg" />
+                    <span>Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar menu area end -->
+      <!-- main content area start -->
+      <div class="main-content">
+        <div class="main-content-inner">
+          <!-- Main inner content -->
+          <div>
+            <div class="nav-btn pull-left">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="dashboard-header mb-20">
+            <div>
+              <a href="Users non-members.html" class="back-arrow-btn">
+                <img src="assets/images/icon/back-arrow-button.svg" alt="" />
+                <span>Go back</span>
+              </a>
+              <h1>David Dobrik</h1>
+            </div>
+            <div class="dropdown">
+              <button
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class="user-img"
+                  src="assets/images/icon/user-img.png"
+                  alt=""
+                />
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="user-detail mb-5">
+            <div class="user-profile">
+              <div class="user-profile-img">
+                <img src="assets/images/icon/user-event-img.png" alt="" />
+              </div>
+              <div class="user-bio">
+                <div class="user-fav">
+                  <div>
+                    <h1>Alexis Ren</h1>
+                    <p class="romie-med">Non-Member</p>
+                  </div>
+                </div>
+                <div class="user-bio-detail" style="visibility: hidden">
+                  <p class="romie-med">Influencer</p>
+                  <p>
+                    <span class="text-grey">City:</span>
+                    <span class="romie-med">Los Angeles, CA</span>
+                  </p>
+                  <p>
+                    <span class="text-grey">Phone:</span>
+                    <span class="romie-med">818-564-5753</span>
+                  </p>
+                  <p>
+                    <span class="text-grey">Rating:</span>
+                    <span class="romie-med">A+</span>
+                  </p>
+                  <p>
+                    <span class="text-grey">Interests:</span>
+                    <span class="romie-med"
+                      >Sports events, nightclubs, art shows</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="social-accounts user-social-accounts"
+                  style="visibility: hidden"
+                >
+                  <div class="social-icons">
+                    <a href=""
+                      ><img src="assets/images/icon/insta.svg" alt=""
+                    /></a>
+                    <span>12 M</span>
+                  </div>
+                  <div class="social-icons">
+                    <a href=""
+                      ><img src="assets/images/icon/twitter.svg" alt=""
+                    /></a>
+                    <span>600K</span>
+                  </div>
+                  <div class="social-icons">
+                    <a href=""
+                      ><img src="assets/images/icon/snapchat.svg" alt=""
+                    /></a>
+                    <span>N/A</span>
+                  </div>
+                  <div class="social-icons">
+                    <a href=""
+                      ><img src="assets/images/icon/tiktok.svg" alt=""
+                    /></a>
+                    <span>N/A</span>
+                  </div>
+                  <div class="social-icons">
+                    <a href=""
+                      ><img src="assets/images/icon/insta.svg" alt=""
+                    /></a>
+                    <span>N/A</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-events-listings">
+            <div class="nav nav-tabs user-events-tabs mb-4">
+              <button
+                class="nav-link active"
+                data-bs-toggle="tab"
+                data-bs-target="#past-events"
+              >
+                Past Events
+              </button>
+              <button
+                class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#upcoming-events"
+              >
+                Upcoming Events
+              </button>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="past-events">
+                <div class="row g-3">
+                  <div class="col-xxl-auto col-xl-2 col-md-4 col-sm-6">
+                    <div class="user-events-item">
+                      <img
+                        src="assets/images/icon/user-img-event3.png"
+                        alt=""
+                      />
+                      <p class="user-event-title">Revolve Festival</p>
+                      <p class="user-event-date">April 13th, 9PM-1AM</p>
+                    </div>
+                  </div>
+                  <div class="col-xxl-auto col-xl-2 col-md-4 col-sm-6">
+                    <div class="user-events-item">
+                      <img
+                        src="assets/images/icon/user-img-event3.png"
+                        alt=""
+                      />
+                      <p class="user-event-title">Revolve Festival</p>
+                      <p class="user-event-date">April 13th, 9PM-1AM</p>
+                    </div>
+                  </div>
+                  <div class="col-xxl-auto col-xl-2 col-md-4 col-sm-6">
+                    <div class="user-events-item">
+                      <img
+                        src="assets/images/icon/user-img-event3.png"
+                        alt=""
+                      />
+                      <p class="user-event-title">Revolve Festival</p>
+                      <p class="user-event-date">April 13th, 9PM-1AM</p>
+                    </div>
+                  </div>
+                  <div class="col-xxl-auto col-xl-2 col-md-4 col-sm-6">
+                    <div class="user-events-item">
+                      <img src="assets/images/icon/event-img1.png" alt="" />
+                      <p class="user-event-title">Revolve Festival</p>
+                      <p class="user-event-date">April 13th, 9PM-1AM</p>
+                    </div>
+                  </div>
+                  <div class="col-xxl-auto col-xl-2 col-md-4 col-sm-6">
+                    <div class="user-events-item">
+                      <img
+                        src="assets/images/icon/user-img-event3.png"
+                        alt=""
+                      />
+                      <p class="user-event-title">Revolve Festival</p>
+                      <p class="user-event-date">April 13th, 9PM-1AM</p>
+                    </div>
+                  </div>
+                  <div class="col-xxl-auto col-xl-2 col-md-4 col-sm-6">
+                    <div class="user-events-item">
+                      <img
+                        src="assets/images/icon/user-img-event3.png"
+                        alt=""
+                      />
+                      <p class="user-event-title">Revolve Festival</p>
+                      <p class="user-event-date">April 13th, 9PM-1AM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="upcoming-events">
+                <div class="row g-3">
+                  <div class="col-xxl-auto col-xl-2 col-md-4 col-sm-6">
+                    <div class="user-events-item">
+                      <img
+                        src="assets/images/icon/user-img-event3.png"
+                        alt=""
+                      />
+                      <p class="user-event-title">Revolve Festival</p>
+                      <p class="user-event-date">April 13th, 9PM-1AM</p>
+                    </div>
+                  </div>
+                  <div class="col-xxl-auto col-xl-2 col-md-4 col-sm-6">
+                    <div class="user-events-item">
+                      <img src="assets/images/icon/event-img1.png" alt="" />
+                      <p class="user-event-title">Revolve Festival</p>
+                      <p class="user-event-date">April 13th, 9PM-1AM</p>
+                    </div>
+                  </div>
+                  <div class="col-xxl-auto col-xl-2 col-md-4 col-sm-6">
+                    <div class="user-events-item">
+                      <img
+                        src="assets/images/icon/user-img-event3.png"
+                        alt=""
+                      />
+                      <p class="user-event-title">Revolve Festival</p>
+                      <p class="user-event-date">April 13th, 9PM-1AM</p>
+                    </div>
+                  </div>
+                  <div class="col-xxl-auto col-xl-2 col-md-4 col-sm-6">
+                    <div class="user-events-item">
+                      <img
+                        src="assets/images/icon/user-img-event3.png"
+                        alt=""
+                      />
+                      <p class="user-event-title">Revolve Festival</p>
+                      <p class="user-event-date">April 13th, 9PM-1AM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- page container area end -->
+
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+
+    <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/scripts.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Prevent dropdown from closing on click inside the menu
+        $(".dropdown-menu").on("click", function (e) {
+          e.stopPropagation();
+        });
+      });
+    </script>
+  </body>
+</html>

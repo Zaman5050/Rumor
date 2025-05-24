@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/default-css.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/style-z.css" />
+  </head>
+
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <!-- preloader area start -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+      <!-- sidebar menu area start -->
+      <div class="sidebar-menu">
+        <div class="sidebar-header">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/images/icon/sidebar-logo.svg" alt="logo"
+            /></a>
+          </div>
+        </div>
+
+        <div class="main-menu">
+          <div class="menu-inner1">
+            <nav>
+              <ul class="metismenu" id="">
+                <li>
+                  <a href="host-web-dashboard.html">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/dashboard.svg"
+                    />
+
+                    <span>dashboard</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="#">
+                    <img
+                      class="greenIcon"
+                      src="assets/images/icon/events.svg"
+                    />
+
+                    <span>Events</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Chat.html">
+                    <img class="whiteIcon" src="assets/images/icon/chat.svg" />
+                    <span>Chat</span>
+                  </a>
+                </li>
+                <li class="accordion user-tab-accordion">
+                  <a
+                    href="#user-dropdown"
+                    data-bs-toggle="collapse"
+                    class="accordion-button collapsed"
+                  >
+                    <img src="assets/images/icon/user.svg" alt="User Icon" />
+                    <span>User</span>
+                  </a>
+                  <ul class="accordion-collapse collapse" id="user-dropdown">
+                    <li>
+                      <a href="Users-members.html">
+                        <span>Members</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="Users non-members.html">
+                        <span>Non-members</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="Team.html">
+                    <img src="assets/images/icon/team.svg" />
+                    <span>Team</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Settings.html">
+                    <img src="assets/images/icon/Settings.svg" />
+                    <span>Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar menu area end -->
+      <!-- main content area start -->
+      <div class="main-content">
+        <div class="main-content-inner">
+          <!-- Main inner content -->
+          <div>
+            <div class="nav-btn pull-left">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- --------------------------Start Coding from here------------------------------------ -->
+          <div class="dashboard-main-headings">
+            <!-- <p class="welcome-back">Welcome back</p> -->
+            <h1 class="main-heading">Events</h1>
+            <!-- <h5 class="events-heading">Events</h5> -->
+          </div>
+          <div class="create-event-tabs-container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home"
+                  type="button"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                >
+                  Upcoming
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                >
+                  Pending approval
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                >
+                  Drafts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="complete-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#complete"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                >
+                  Complete
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              
+                  <div
+                    class="tab-pane fade show active"
+                    id="home"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                  >
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <a 
+                        href="web-host-creat-event.html"
+                        class="create-first-event-box"
+                      >
+                        <div class="text-center">
+                          <img
+                            class="mb-3"
+                            src="assets/images/clarity_plus-line.svg"
+                          />
+                          <p style="font-size: 14px">Create your first event</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="">
+                        <img style="height: 217px; width: 100%; object-fit: cover; border-radius: 17px;" src="assets/images/create-event-img.svg">
+                        <div>
+                          <h6 class="img-details-style">h.wood Homecoming</h6>
+                          <p style="font-family: 'abc-diatype-regular';" class="img-details-style">February 9, 8:00pm</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  </div>
+                
+
+                
+                  
+                  <div
+                  class="tab-pane fade"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                  >
+                  <div class="row">
+                   
+                    <div class="col-lg-3">
+                      <div class="">
+                        <img style="height: 217px; width: 100%; object-fit: cover; border-radius: 17px;" src="assets/images/create-event-img.svg">
+                        <div>
+                          <h6 class="img-details-style">h.wood Homecoming</h6>
+                          <p style="font-family: 'abc-diatype-regular';" class="img-details-style">February 9, 8:00pm</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              <div
+              class="tab-pane fade"
+              id="contact"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+              >
+              <div class="row">
+                   
+                <div class="col-lg-3">
+                  <div class="">
+                    <img style="height: 217px; width: 100%; object-fit: cover; border-radius: 17px;" src="assets/images/create-event-img.svg">
+                    <div>
+                      <h6 class="img-details-style">h.wood Homecoming</h6>
+                      <p style="font-family: 'abc-diatype-regular';" class="img-details-style">February 9, 8:00pm</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div
+            class="tab-pane fade"
+            id="complete"
+            role="tabpanel"
+            aria-labelledby="complete-tab"
+            >
+            <div class="row">
+                   
+              <div class="col-lg-3">
+                <div class="">
+                  <img style="height: 217px; width: 100%; object-fit: cover; border-radius: 17px;" src="assets/images/create-event-img.svg">
+                  <div>
+                    <h6 class="img-details-style">h.wood Homecoming</h6>
+                    <p style="font-family: 'abc-diatype-regular';" class="img-details-style">February 9, 8:00pm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+            </div>
+          </div>
+
+          <!-- main content area end -->
+        </div>
+      </div>
+    </div>
+    <!-- page container area end -->
+
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script>
+      $(".selector").flatpickr({
+        mode: "range",
+        dateFormat: "m-d-Y",
+      });
+    </script>
+  </body>
+</html>

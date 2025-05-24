@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/icon/rumor-logo.png"
+      type="image/x-icon"
+    />
+    <!-- select2 css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/default-css.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styleu.css" />
+  </head>
+
+  <body>
+    <!-- preloader area start -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+      <!-- sidebar menu area start -->
+      <div class="sidebar-menu">
+        <div class="sidebar-header">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/images/icon/sidebar-logo.svg" alt="logo"
+            /></a>
+          </div>
+        </div>
+
+        <div class="main-menu">
+          <div class="menu-inner1">
+            <nav>
+              <ul class="metismenu" id="">
+                <li>
+                  <a href="host-web-dashboard.html">
+                    <img src="assets/images/icon/dashboard.svg" />
+                    <span>dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="web-host-events.html">
+                    <img src="assets/images/icon/events.svg" />
+                    <span>Events</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="Chat.html">
+                    <img class="whiteIcon" src="assets/images/icon/chat.svg" />
+                    <span>Chat</span>
+                  </a>
+                </li>
+                <li class="accordion user-tab-accordion">
+                  <a
+                    href="#user-dropdown"
+                    data-bs-toggle="collapse"
+                    class="accordion-button collapsed"
+                  >
+                    <img src="assets/images/icon/user.svg" alt="User Icon" />
+                    <span>User</span>
+                  </a>
+                  <ul class="accordion-collapse collapse" id="user-dropdown">
+                    <li>
+                      <a href="Users-members.html">
+                        <span>Members</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="Users non-members.html">
+                        <span>Non-members</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="Team.html">
+                    <img src="assets/images/icon/team.svg" />
+                    <span>Team</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Settings.html">
+                    <img src="assets/images/icon/Settings.svg" />
+                    <span>Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar menu area end -->
+      <!-- main content area start -->
+      <div class="main-content chat-content">
+        <div class="main-content-inner">
+          <!-- Main inner content -->
+          <div>
+            <div class="nav-btn pull-left">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="row g-0">
+            <div class="col-lg-4">
+              <div class="chats-inbox-area">
+                <div class="chat-inbox-header">
+                  <div class="create-chat-area mb-4">
+                    <h1 class="chat-title">Chat</h1>
+                    <button class="plus-chat-btn">
+                      <img src="assets/images/icon/plus-icon.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="filter-chat-dropdwon">
+                    <input
+                      type="text"
+                      class="input search-field"
+                      placeholder="Search Chat"
+                    />
+                    <div class="dropdown">
+                      <button
+                        class="filter-btn"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <img
+                          class="user-img"
+                          src="assets/images/icon/filter-icon.svg"
+                          alt=""
+                        />
+                      </button>
+                      <ul class="dropdown-menu">
+                        <p class="romie-bold">Filter by</p>
+                        <div class="radio-chat-filter mt-3">
+                          <div class="d-flex align-items-center gap-2">
+                            <input
+                              type="radio"
+                              name="chat-filter"
+                              id="internal"
+                              class="radio-button-chat"
+                            />
+                            <label for="internal">Internal</label>
+                          </div>
+                          <div class="d-flex align-items-center gap-2">
+                            <input
+                              type="radio"
+                              name="chat-filter"
+                              id="members"
+                              class="radio-button-chat"
+                            />
+                            <label for="members">Members</label>
+                          </div>
+                          <div class="d-flex align-items-center gap-2">
+                            <input
+                              type="radio"
+                              name="chat-filter"
+                              id="Non-members"
+                              class="radio-button-chat"
+                            />
+                            <label for="Non-members">Non-members</label>
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-boxes mt-3">
+                  <a class="chat-item active">
+                    <div class="contact-box">
+                      <img
+                        class="contact-img"
+                        src="assets/images/icon/chat-user.png"
+                        alt=""
+                      />
+                      <div class="contact-detail">
+                        <div class="chat-status">
+                          <p class="msg-time">Just Now</p>
+                          <span class="msg-no">2</span>
+                        </div>
+                        <h4 class="contact-title">David Dobrik</h4>
+                        <p class="event-name fs-12">Event name</p>
+                        <p class="message-text fs-12">
+                          Done! Ilya will receive a text link to Ru
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="chat-item">
+                    <div class="contact-box">
+                      <img
+                        class="contact-img"
+                        src="assets/images/icon/chat-user.png"
+                        alt=""
+                      />
+                      <div class="contact-detail">
+                        <div class="chat-status">
+                          <p class="msg-time">Just Now</p>
+                          <span class="msg-no">2</span>
+                        </div>
+                        <h4 class="contact-title">David Dobrik</h4>
+                        <p class="event-name fs-12">Event name</p>
+                        <p class="message-text fs-12">
+                          Done! Ilya will receive a text link to Ru
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="chat-msgs-area">
+                <!-- new chat div -->
+                <div class="new-chat-members" style="display: none">
+                  <span class="to-text">To:</span>
+                  <select name="" id="" class="select-chat-member">
+                    <optgroup label="Members">
+                      <option value="">Jordan Clarkson</option>
+                      <option value="">Jordan Clarkson</option>
+                    </optgroup>
+                    <optgroup label="Non-members">
+                      <option value="">Jordan Clarkson</option>
+                      <option value="">Jordan Clarkson</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="chat-user-detail">
+                  <a class="back-chat-btn">
+                    <img
+                      src="assets/images/icon/back-arrow-button.svg"
+                      alt=""
+                    />
+                  </a>
+                  <img
+                    class="chat-user-img"
+                    src="assets/images/icon/chat-user.png"
+                    alt=""
+                  />
+                  <span class="chat-user-name">David Dobrik</span>
+                </div>
+                <div class="messages">
+                  <div class="receiver-msg">
+                    <span>Hey, got a question about next weeks event</span>
+                  </div>
+                  <div class="receiver-msg">
+                    <span>Can I bring a plus 1?</span>
+                  </div>
+                  <div class="receiver-msg">
+                    <span>Can I bring a plus 1?</span>
+                  </div>
+                  <div class="receiver-msg">
+                    <span>Can I bring a plus 1?</span>
+                  </div>
+                  <div class="sender-msg">
+                    <span
+                      >Hey David! Of course! Just send me their name and phone
+                      number and I’ll add them to the list!</span
+                    >
+                  </div>
+                  <div class="receiver-msg">
+                    <span>Can I bring a plus 1?</span>
+                  </div>
+                  <div class="receiver-msg">
+                    <span>Can I bring a plus 1?</span>
+                  </div>
+                  <div class="receiver-msg">
+                    <span>Can I bring a plus 1?</span>
+                  </div>
+                  <div class="sender-msg">
+                    <span
+                      >Hey David! Of course! Just send me their name and phone
+                      number and I’ll add them to the list!</span
+                    >
+                  </div>
+                  <div class="receiver-msg">
+                    <span>Can I bring a plus 1?</span>
+                  </div>
+                  <div class="receiver-msg">
+                    <span>Can I bring a plus 1?</span>
+                  </div>
+                  <div class="receiver-msg">
+                    <span>Can I bring a plus 1?</span>
+                  </div>
+                  <div class="sender-msg">
+                    <span
+                      >Hey David! Of course! Just send me their name and phone
+                      number and I’ll add them to the list!</span
+                    >
+                  </div>
+                  <div class="receiver-msg">
+                    <img src="assets/images/icon/voice-msg-btn.svg" alt="" />
+                    <img src="assets/images/icon/voice-msg.svg" alt="" />
+                  </div>
+                </div>
+                <div class="type-message">
+                  <div class="send-msg-area">
+                    <div class="attach-file">
+                      <button>
+                        <img src="assets/images/icon/plus-icon.svg" alt="" />
+                      </button>
+                      <input type="file" />
+                    </div>
+                    <textarea
+                      class="write-msg-textarea"
+                      placeholder="Type Message"
+                    ></textarea>
+                    <div class="voice-record">
+                      <img src="assets/images/icon/voice-record.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- page container area end -->
+
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+
+    <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Prevent dropdown from closing on click inside the menu
+        $(".dropdown-menu").on("click", function (e) {
+          e.stopPropagation();
+        });
+      });
+      $(".chat-item").click(() => {
+        $(".chat-msgs-area").addClass("show");
+      });
+      $(".back-chat-btn").click(() => {
+        $(".chat-msgs-area").removeClass("show");
+      });
+
+      $(document).ready(function () {
+        $(".select-chat-member").select2();
+      });
+    </script>
+  </body>
+</html>

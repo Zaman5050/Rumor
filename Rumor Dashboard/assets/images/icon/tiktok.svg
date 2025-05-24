@@ -1,0 +1,20 @@
+<svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="9" height="10" fill="#2D2D2D"/>
+<g id="Users" clip-path="url(#clip0_12201_28979)">
+<rect width="1512" height="982" transform="translate(-718 -348)" fill="#1D1C1C"/>
+<rect id="Rectangle 17835156" x="-459" y="-321" width="1233" height="977" rx="36" fill="#F3F3F3"/>
+<g id="Frame 1982248480">
+<g id="Frame 1982248414">
+<g id="Frame 1982248412">
+<circle id="Ellipse 7185" cx="4" cy="5" r="9" fill="black"/>
+<path id="Vector" d="M7.14031 1.56667C6.74795 1.13312 6.53172 0.576351 6.53189 0H4.75829V6.88889C4.74461 7.26168 4.582 7.61479 4.30471 7.87385C4.02742 8.13292 3.65708 8.27773 3.27168 8.27778C2.45663 8.27778 1.77934 7.63333 1.77934 6.83333C1.77934 5.87778 2.73214 5.16111 3.71365 5.45556V3.7C1.73342 3.44444 0 4.93333 0 6.83333C0 8.68333 1.58418 10 3.26594 10C5.06824 10 6.53189 8.58333 6.53189 6.83333V3.33889C7.25108 3.83881 8.11456 4.10703 9 4.10556V2.38889C9 2.38889 7.92092 2.43889 7.14031 1.56667Z" fill="#F0F0F0"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_12201_28979">
+<rect width="1512" height="982" fill="white" transform="translate(-718 -348)"/>
+</clipPath>
+</defs>
+</svg>
